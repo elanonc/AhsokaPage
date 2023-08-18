@@ -24,13 +24,14 @@ body {
     margin-inline: 190px;
 }
 
-.logo {
+.logo-link {
     /*
     width: 125px;
 
     margin-block: 10px;
     margin-right: 190p;
     */
+    margin: 0;
 }
 
 header nav a {
@@ -58,27 +59,31 @@ header nav a:hover {
     font-size: 20px;
 
     height: 690px;
+    margin-inline: 190px;
 
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .main-card .main-description {
     margin-top: 10px;
     margin-bottom: 40px;
-    width: 25%;
+    width: 50%;
     font-size: 20px;
     font-weight: 400;
 }
 
 .main-card .main-title {
-
     font-size: 70px;
     font-weight: 600;
 }
 
+.main-card .main-title .highlight {
+    font-size: 1.2em;
+    color: #FFD700;
+}
+
 img {
-    width: 100%;
+    width: 20em;
 }
