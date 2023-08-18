@@ -30,8 +30,22 @@ body {
 
     margin-block: 10px;
     margin-right: 190p;
+
+    position: relative;
+    display: inline-block;
     */
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    font-size: 20px;
+
+}
+
+.logo {
+    width: 20px;
+    margin-right: 10px;
 }
 
 header nav a {
@@ -110,3 +124,20 @@ button {
     text-align: center;
     vertical-align: middle;
 }
+
+table {
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+tr td img {
+    max-width: 100%;
+    height: auto;
+}
+
