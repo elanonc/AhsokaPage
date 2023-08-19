@@ -2,6 +2,9 @@
     --vermelho: #e50914;
     --preto: #141414;
     --cinza: #222222;
+    --cinzaDois: #444444;
+    --tonal: #394264;
+    --azul: #252B42;
 }
 
 body {
@@ -25,22 +28,12 @@ body {
 }
 
 .logo-link {
-    /*
-    width: 125px;
-
-    margin-block: 10px;
-    margin-right: 190p;
-
-    position: relative;
-    display: inline-block;
-    */
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: start;
 
     font-size: 20px;
-
 }
 
 .logo {
@@ -49,11 +42,8 @@ body {
 }
 
 header nav a {
-
     margin-inline: 30px;
-/*
-    font-size: 15px;
-    */
+
 }
 
 header nav a:hover {
@@ -69,10 +59,10 @@ header nav a:hover {
 
 /*MAIN*/
 
-.main-card {
+.main-section {
     font-size: 20px;
 
-    height: 670px;
+    height: 671px;
     margin-inline: 190px;
 
     display: flex;
@@ -80,7 +70,7 @@ header nav a:hover {
     align-items: center;
 }
 
-.main-card .main-description {
+.main-section .main-description {
     margin-top: 10px;
     margin-bottom: 40px;
     width: 50%;
@@ -88,12 +78,12 @@ header nav a:hover {
     font-weight: 400;
 }
 
-.main-card .main-title {
+.main-section .main-title {
     font-size: 70px;
     font-weight: 600;
 }
 
-.main-card .main-title .highlight {
+.highlight {
     font-size: 1.2em;
     color: #fa6400;
 }
@@ -125,19 +115,137 @@ button {
     vertical-align: middle;
 }
 
-table {
-    width: 100%;
+/*TABLE*/
+
+.table-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-th,
-td {
-    border: 1px solid #ddd;
-    padding: 8px;
+.table-section h2 {
+    font-size: 4em;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.table-section table {
+    width: 10%;
+}
+
+.table-section td {
+    border: 4px solid #FFF;
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.table-section th {
     text-align: center;
+    font-weight: 600;
+    border: 4px solid #FFF;
+    padding: 15px;
 }
 
-tr td img {
-    max-width: 100%;
-    height: auto;
+.table-section, #links {
+    height: 740px;
 }
 
+/* LINKS SECTION */
+
+.links-section {
+    font-size: 20px;
+
+    height: 671px;
+    margin-inline: 190px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links-section .image-section {
+    margin-right: 20px;
+}
+
+.links-section .sinopse {
+    margin-block: 30px;
+    width: 75%;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: right;
+}
+
+.links-section .logo {
+    width: 70%;
+    margin-right: 15px;
+}
+
+.links-section .links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.sinopse-links {
+    list-style-type: disc;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.sinopse-links li {
+    margin-bottom: 5px;
+}
+
+/*Seção final e footer*/
+
+
+.sobre-ahsoka, .sobre-mim {
+    height: 335px;
+}
+
+.sobre-mim {
+    background-color: var(--cinzaDois);
+    font-size: 4em;
+    font-weight: 600;
+}
+
+.sobre-mim img {
+    width: 2em;
+}
+
+.final-message {
+    height: 61px;
+    font-size: 1em;
+}
+
+.sobre-mim, .final-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.sobre-ahsoka .ahsoka-content h3 {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.sobre-ahsoka .ahsoka-content p {
+    margin-block: 30px;
+    width: 50%;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.sobre-ahsoka {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 190px;
+}

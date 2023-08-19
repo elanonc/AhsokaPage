@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahsoka Tano Universe</title>
+    <title>AHSOKA</title>
+
+    <link rel="icon" href="assets/pngegg.png">
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -15,6 +17,8 @@
 </head>
 <body>
 
+<!-- NavBar simples com a logo e o nome do site: Ahsoka-->
+
 <header class="header-container">
     <nav class="navbar">
         <a href="#" class="logo-link">
@@ -22,63 +26,155 @@
             <h1>A H S O K A</h1>
         </a>
         <div class="navpage">
-            <a href="#">Início</a>
-            <a href="https://www.youtube.com/watch?v=9GwFC4NZVrA">Teaser</a>
-            <a href="https://www.youtube.com/watch?v=RLW3NeEPpkI">Trailer Legendado</a>
-            <a href="https://www.youtube.com/watch?v=y_zO8R0IEjc">Trailer Dublado</a>
+            <a href="#links">Sinopse</a>
+            <a href="#cronologia">Cronologia</a>
+            <a href="#mais">Mais sobre Ahsoka</a>
+            <a href="#sobre-mim">Sobre mim</a>
         </div>
-        <button>Sair</button>
+        <!-- links para a própria página-->
+        <button>
+            <a href="https://www.starwars.com">+Star Wars</a>
+        </button>
+        <!-- link para o site oficial de star wars-->
     </nav>
 </header>
 
-<!-- -->
+<!-- Seção inicial da aplicação -->
 
-<main>
-    <div class="main-card">
-        <div class="main-container">
-            <h3 class="main-title">IM NO <br> <span class="highlight">JEDI</span>.</h3>
-            <p class="main-description">
-                "Ahsoka Tano, personagem cativante de Star Wars, destaca-se como uma guerreira valente e leal. Aprendiz de Anakin
-                Skywalker, ela demonstra coragem em batalhas, enfrentando desafios e encontrando sabedoria. Sua jornada é marcada por
-                determinação e evolução, provando ser uma figura inspiradora na galáxia."
-            </p>
-            <button>Botão 1</button>
-            <button>Botão 2</button>
-        </div>
-        <div class="image-section">
-            <img src="assets/ahsokap2.png" alt="Ahsoka Tano em posição de combate">
-        </div>
+<main class="main-section">
+
+    <div class="main-container">
+        <h3 class="main-title">
+            IM NO <br> <span class="highlight">JEDI</span>.
+        </h3>
+        <!-- esse título é uma frase que a personagem fala em uma série -->
+        <p class="main-description">
+            Ahsoka Tano, personagem cativante de Star Wars, destaca-se como uma guerreira valente e leal. Aprendiz de Anakin
+            Skywalker, ela demonstra coragem em batalhas, enfrentando desafios e encontrando sabedoria. Sua jornada é marcada por
+            determinação e evolução, provando ser uma figura inspiradora na galáxia.
+        </p>
+        <button>
+            <a href="https://www.starwars.com/news/who-is-ahsoka-tano" target="_blank">
+                Mais sobre Ahsoka
+            </a>
+        </button>
+        <button>
+            <a href="https://www.starwars.com/news/essential-ahsoka-tano-episodes" target="_blank">
+                Lista de episódios
+            </a>
+        </button>
+        <!-- botei alguns links aqui para o site oficial de Star Wars -->
     </div>
+    <div class="image-section">
+        <a href="https://www.starwars.com/news/ahsoka-new-premiere-date"
+        target="_blank">
+            <img src="assets/ahsokap2.png" alt="Ahsoka Tano em posição de combate">
+        </a>
+    </div>
+
 </main>
 
-<section class="cards-section">
+<!-- Essa seção contém os 3 links externos, e mais um link externo na imagem -->
+
+<section id="links" class="links-section">
+    <!-- Essa imagem redireciona para uma publicação no site oficial de Star Wars -->
+    <div class="image-section">
+        <a href="https://www.starwars.com/news/ahsoka-new-premiere-date" target="_blank">
+            <img src="assets/Poster.png" alt="Poster da série Ahsoka">
+        </a>
+    </div>
+    <!-- Nessa div tem os 3 links pedidos na atividade -->
+    <div class="links-container">
+        <img src="assets/series-logo.png"
+        alt="Logo da série Star Wars: Ahsoka" class="logo">
+        <p class="sinopse">
+            "Após a queda do Império, acompanhamos as aventuras da antiga cavaleira Jedi Ahsoka Tano (Rosario Dawson), mítica
+            personagem das animações "Star Wars Rebels" e "Star Wars: The Clone Wars", seguindo sua perseguição ao Grande Almirante
+            Imperial Thrawn (Lars Mikkelsen) e outras ameaças à galáxia.""
+        </p>
+        <ul class="sinopse-links">
+            <li><a href="https://www.youtube.com/watch?v=9GwFC4NZVrA" target="_blank">Teaser</a></li>
+            <li><a href="https://www.youtube.com/watch?v=RLW3NeEPpkI" target="_blank">Trailer Legendado</a></li>
+            <li><a href="https://www.youtube.com/watch?v=y_zO8R0IEjc" target="_blank">Trailer Dublado</a></li>
+        </ul>
+    </div>
+</section>
+
+<!-- Nessa seção tem a tabela com informações que foi pedido na atividade -->
+
+<section id="cronologia" class="table-section">
+    <h2>CRONOLOGIA AHSOKA TANO</h2>
     <table>
         <thead>
             <tr>
-                <th>Star Wars: The Clone Wars</th>
-                <th>Star Wars: The Clone Wars</th>
-                <th>Star Wars: Rebels</th>
-                <th>The Book of Boba Fett</th>
+                <th>AS GUERRAS CLÔNICAS </th>
+                <th>A SAÍDA DA ORDEM</th>
+                <th>A ASCENÇÃO DO IMPÉRIO</th>
+                <th>A NOVA REPÚBLICA</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td><img src="assets/ahsokaclonewarsbegin.png" alt="Imagem"></td>
-                <td><img src="assets/ahsokaclonewarsfinal.png" alt="Imagem"></td>
-                <td><img src="assets/ahsokarebels.png" alt="Imagem"></td>
-                <td><img src="assets/ahsokaliveaction.png" alt="Imagem"></td>
+            <tr class="img-moments">
+                <td><img src="assets/AHSOKA-GM-1.png" alt="Ahsoka e Anakin conversando"></td>
+                <td><img src="assets/AHSOKA-GM-2.png" alt="Ahsoka sendo condenada injustamente"></td>
+                <td><img src="assets/AHSOKA-GM-4.png" alt="Ahsoka vs Darth Vader"></td>
+                <td><img src="assets/AHSOKA-GM-5.png" alt="Ahsoka em posição de combate"></td>
             </tr>
-            <tr>
-                <td>Texto</td>
-                <td>Texto</td>
-                <td>Texto</td>
-                <td>Texto</td>
+            <tr">
+                <td>Ahsoka Tano foi uma padawan que lutou nas <strong>Guerras Clônicas</strong>, defendendo o lado da <strong>República Galática</strong>. Nesse período ela foi aprendiz de <strong>Anakin Skywalker</strong>. </td>
+                <td>Ahsoka foi acusada de assassinato e condenada pelo conselho Jedi. Após provar sua
+                    inocência, Ahsoka percebeu como os
+                    Jedi haviam se perdido em meio aos seus ideais, e saiu da <strong>Ordem Jedi</strong>.</td>
+                <td>Após o chanceler <strong>Palpatine</strong> decretar o fim da Republica e a ascenção do <strong>Império</strong>, Ahsoka
+                    atuou como rebelde durante a
+                    guerra. Nesse período, Ahsoka passou pelo seu maior desafio: enfrentar o seu antigo mestre que havia
+                    caído para o lado
+                    sombrio e agora se chamava <strong>Darth Vader</strong>.</td>
+                <td>Após o fim do <strong>Império</strong>, Ahsoka continua sua jornada buscando conhecimento sobre a força e
+                    ajudando mais planetas a se
+                    libertarem da tirania.</td>
             </tr>
         </tbody>
     </table>
 
 </section>
 
+<!-- Essa seção foi mais para finalizar a página -->
+
+<section id="sobre">
+    <div id="mais" class="sobre-ahsoka">
+        <div class="ahsoka-content">
+            <h3>
+                QUER SABER <br> <span class="highlight">MAIS</span> SOBRE AHSOKA?
+            </h3>
+            <p class="main-description">
+                O youtuber Caique Izoton fez um vídeo falando sobre cada fase da vida de Ahsoka Tano entre as séries animadas Star Wars: Clone Wars e Star Wars: Rebels. Para assistir, basta clicar no botão ao lado.
+            </p>
+        </div>
+        <button>
+            <a href="https://www.youtube.com/watch?v=V5jZSDybpPw&t=1786s&pp=ygUUY2FpcXVlIGl6b3RvbiBhaHNva2E%3D" target="_blank">
+                Vídeo do Caique
+            </a>
+        </button>
+    </div>
+    <footer id="sobre-mim" class="sobre-mim">
+        <h3>
+            Elano Nunes Caitano - 473434
+        </h3>
+        <div class="minhas-redes">
+            <!-- Link para o repositório da aplicação -->
+            <a href="https://github.com/elanonc/AhsokaPage" target="_blank">
+                <img src="assets/icons/icons8-github.svg" alt="github">
+            </a>
+            <a href="https://www.linkedin.com/in/elanonc/" target="_blank">
+                <img src="assets/icons/icons8-linkedin-250.svg" alt="linkedin">
+            </a>
+        </div>
+    </footer>
+    <div class="final-message">
+        <p>May the force be with you</p>
+    </div>
+</section>
 
 </body>
 </html>
